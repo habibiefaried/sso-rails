@@ -10,6 +10,7 @@
   </thead>
 
   <tbody>
+    <%= @perans.inspect %>
     <% @perans.each do |peran| %>
       <tr>
         <td><%= peran.peran %></td>

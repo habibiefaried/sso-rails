@@ -33,7 +33,7 @@
     <%= f.text_field :peran_id %> -->
     <%= f.label :peran_id %><br>
      <!--<%= @perans.inspect %>-->
-    <%= f.select(:peran_id,options_from_collection_for_select(@perans,'id','peran',f.object.peran_id)) %>
+    <%= f.select(:peran_id,options_from_collection_for_select(@Perans,'id','peran',f.object.peran_id)) %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -22,7 +22,7 @@
 
 <p>
   <strong>Peran:</strong>
-  <%= @admin.peran.peran %>
+  <%= @admin.peran. %>
 </p>
 
 <%= link_to 'Edit', edit_admin_path(@admin) %> |
