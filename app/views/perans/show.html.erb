@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Peran:</strong>
+  <%= @peran.peran %>
+</p>
+
+<p>
+  <strong>Jabatan:</strong>
+  <%= @peran.jabatan %>
+</p>
+
+<%= link_to 'Edit', edit_peran_path(@peran) %> |
+<%= link_to 'Back', perans_path %>

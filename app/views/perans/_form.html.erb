@@ -1,0 +1,25 @@
+<%= form_for(@peran) do |f| %>
+  <% if @peran.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@peran.errors.count, "error") %> prohibited this peran from being saved:</h2>
+
+      <ul>
+      <% @peran.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :peran %><br>
+    <%= f.text_field :peran %>
+  </div>
+  <div class="field">
+    <%= f.label :jabatan %><br>
+    <%= f.text_field :jabatan %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
